@@ -1,9 +1,9 @@
 import React from 'react';
-import { Outlet, useNavigation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Footer from '../Pages/Footer';
 
 const MainLayout = () => {
-    const navigation = useNavigation();
+
     return (
         <div >
             <section className=' flex justify-between items-center px-10 shadow-md py-7'>
@@ -14,7 +14,7 @@ const MainLayout = () => {
                     <ul className=' flex gap-5 text-xl font-bold'>
                         <li><a href="/">Home</a></li>
                         <li><a href="/products">Products</a></li>
-                        <li><a href="/deshboard">Deshboard</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
                         <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
